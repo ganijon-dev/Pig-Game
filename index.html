@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                
+            <input type="text" name="Score Number" class="input_field" placeholder="Winning Points">
+            <br>
+                </div>
+            </div>
+           
+            <button class="btn-rule" id="myBtn"><i><ion-icon name="help-circle-outline"></ion-icon></i>Game Rule</button>
+            <button class="btn-new"><i><ion-icon name="add-circle-outline"></ion-icon></i>New game</button>
+            <button class="btn-roll"><i><ion-icon name="infinite"></ion-icon></i>Roll dice</button>
+            <button class="btn-hold"><i><ion-icon name="download"></ion-icon></i>Hold</button>
+              
+            <img src="dice-5.png" alt="Dice" class="dice">
+            <img src="dice-5.png" alt="Dice" class="dice-2">
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>
+                <p>Pig is a simple dice game which in its basic form is playable with just a die. You win by being the first player to score 100 or the value you fill in the field. Player 1 starts rolling. That player rolls the dice and scores as many points as the total shown on the  Player's current. The player may continue rolling and accumulating points (but risk rolling a single 1 from any dice) or end his turn.
+                If the player rolls a single 1 from any dice his turn is over, he loses all points he accumulated in the current, and the turn goes to the next player. Play passes from player to player until a winner is determined.</p>
+            </div>
+
+</div>
+        </div>
+        
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>
